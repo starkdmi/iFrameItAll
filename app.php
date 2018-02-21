@@ -6,8 +6,7 @@
       $dom->loadHTMLFile($_GET['url']);
 
       $parsedUrl = parse_url($_GET['url']); 
-      $HOST = $parsedUrl['scheme'] . "://" . $parsedUrl['host'];
-      //echo "<script type='text/javascript'>alert('$HOST');</script>";
+      $HOST = $parsedUrl['scheme'] . "://" . $parsedUrl['host']; // . '/' . $parsedUrl['path'];
              
       $css = $dom->getElementsByTagName('link');
       foreach ($css as $link) {
