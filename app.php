@@ -1,6 +1,6 @@
 <?php
   if(!empty($_GET['url'])) {
-      header('Content-type: text/html; charset=UTF-8');
+      header('Content-type: text/html; charset=UTF-32');
       
       $dom = new DOMDocument;
       $dom->loadHTMLFile($_GET['url']);
